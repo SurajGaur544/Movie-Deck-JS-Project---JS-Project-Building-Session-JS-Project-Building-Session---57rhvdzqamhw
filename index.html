@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Deck</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <a href="\monie-deck">
+            <h1>Movie Deck</h1>
+        </a>
+    </header>
+    <!-- create a container for search bar and button -->
+    <div class="search-bar">
+        <input type="search" class="search-input" placeholder="Search by name…" autocapitalize="off" >
+        <button class="searchbutton">Search</button>
+    </div>
+    <!-- sort button -->
+    <div class="sorting-option">
+        <button id="sort-by-date">Sort by date (oldest to latest)</button>
+        <button id="sort-by-rating">Sort by rating (least to most)</button>
+    </div>
 
+    <!-- tabs -->
+    <div class="tabs">
+        <button id="all-tab" class="active-tab">All</button>
+        <button id="favorites-tab">Favorites</button>
+    </div>
+
+    <div class="movie-list-pagination-btns">
+        <ul id="movie-list">
+            <li class="card">
+                <img src="https://w7.pngwing.com/pngs/116/765/png-transparent-clapperboard-computer-icons-film-movie-poster-angle-text-logo-thumbnail.png" alt="picture is not loaded" />
+                <p class="title">movie-title</p>
+                <section class="vote-favoriteIcon" >
+                    <section class="vote">
+                        <p class="vote-count">Votes:2</p>
+                        <p class="vote-average">Rating:5</p>
+                    </section>
+                    <i class="fa-regular fa-2xl" id="favorite-icon"></i>
+                </section>
+
+
+                
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
